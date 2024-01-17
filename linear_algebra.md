@@ -150,7 +150,7 @@ set.
 1.  (`Replacement`) Replace one row by the sum of itself and a multiple of another row
 
     Example:
-    ```math    
+    ```math
     \begin{bmatrix}
     1 & -2 & 1\\\
     0 & 2 & -8\\\
@@ -202,7 +202,7 @@ set.
    ``` 
     Scale row 1 by 4
     The matrix becomes
-   ```math    
+   ```math
     \begin{bmatrix}
     4 & -8 & 4\\
     0 & 2 & -8\\
@@ -463,7 +463,7 @@ The following matrix is in echelon form
 0 & 0 & 0 & 0 & 1 & 4
 \end{bmatrix}
 ```
-*Since we don&rsquo;t see untrue statements like /1 = 0*, we can say that a solution
+Since we don't see untrue statements like, 1 = 0, we can say that a solution
 exists.
 
 From looking at which columns are pivot columns, we know that x<sub>1</sub>, x<sub>2</sub>, & x<sub>5</sub> are
@@ -474,14 +474,14 @@ many solutions.
 
 We have the following theorem
 
-`Theorem 2: Existence and Uniqueness Theorem`
-    `A linear system is consistent if and only if the rightmost column of the`
-    `augmented matrix is not a pivot column—that is, if and only if an echelon form`
-    `of the augmented matrix has no row of the form`
+Theorem 2: Existence and Uniqueness Theorem
+    A linear system is consistent if and only if the rightmost column of the
+    augmented matrix is not a pivot column—that is, if and only if an echelon form
+    of the augmented matrix has no row of the form
 
-`[0 ... 0 b]     with b nonzero`
+[0 ... 0 b]     with b nonzero
 
-`If a linear system is consistent, then the solution set contains either`
-  `(i) a unique solution, when there are no free variables, or`
-  `(ii) infinitely many solutions, when there is at least one free variable.`
+If a linear system is consistent, then the solution set contains either
+  (i) a unique solution, when there are no free variables, or
+  (ii) infinitely many solutions, when there is at least one free variable.
 
