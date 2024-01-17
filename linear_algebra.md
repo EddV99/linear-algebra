@@ -99,22 +99,22 @@ x<sub>1</sub> - 2x<sub>2</sub> +  x<sub>3</sub> = 0
 
 Align the `coefficients` of each variable in columns, we create the following
 `coefficient matrix`:
-
+```math
 \begin{bmatrix}
 1 & -2 & 1\\
 0 & 2 & -8\\
 5 & 0 & -5
 \end{bmatrix}
-
+```
 If we add the values of the right-hand side of the linear systems, we have the
 `augmented matrix` of the system:
-
+```math
 \begin{bmatrix}
 1 & -2 & 1 & 0\\
 0 & 2 & -8 & 8\\
 5 & 0 & -5 & 10
 \end{bmatrix}
-
+```
 
 <a id="org04cb65c"></a>
 
@@ -150,60 +150,65 @@ set.
 1.  (`Replacement`) Replace one row by the sum of itself and a multiple of another row
 
     Example:
-    
+    ```math    
     \begin{bmatrix}
     1 & -2 & 1\\\
     0 & 2 & -8\\\
     5 & 0 & -5
     \end{bmatrix}
-    
+   ``` 
     Add a multiple of -5 of row 1 to row 3
     
     row 1 \* -5: [-5 10 -5]
     row 3 + (row 1 \* -5): [-5 10 -5] + [5 0 -5] = [0 10 -10]
     
     The matrix becomes
-    
+   ```math 
     \begin{bmatrix}
     1 & -2 & 1\\
     0 & 2 & -8\\
     0 & 10 & -10
     \end{bmatrix}
+    ```
 
 2.  (`Interchange`) Interchange two rows
 
+   ```math 
     \begin{bmatrix}
     1 & -2 & 1\\
     0 & 2 & -8\\
     5 & 0 & -5
     \end{bmatrix}
+    ```
     
     Interchange row 1 and row 3
     The matrix becomes
-    
+   ```math 
     \begin{bmatrix}
     5 & 0 & -5\\
     0 & 2 & -8\\
     1 & -2 & 1
     \end{bmatrix}
+    ```
 
 3.  (`Scaling`) Multiply all entries in a row by a non-zero constant
 
+   ```math 
     \begin{bmatrix}
     1 & -2 & 1\\
     0 & 2 & -8\\
     5 & 0 & -5
     \end{bmatrix}
-    
+   ``` 
     Scale row 1 by 4
     The matrix becomes
-    
+```math    
     \begin{bmatrix}
     4 & -8 & 4\\
     0 & 2 & -8\\
     5 & 0 & -5
     \end{bmatrix}
-
+```
 
 <a id="org27e6ed9"></a>
 
@@ -216,57 +221,57 @@ x<sub>1</sub> - 2x<sub>2</sub> +  x<sub>3</sub> = 0
 5x<sub>1</sub>      - 5x<sub>3</sub> = 10
 
 Augmented Matrix Form
-
+```math
 \begin{bmatrix}
 1 & -2 & 1 & 0\\
 0 & 2 & -8 & 8\\
 5 & 0 & -5 & 10
 \end{bmatrix}
-
+```
 `Scale` row 1 by 5
-
+```math
 \begin{bmatrix}
 5 & -10 & 5 & 0\\
 0 & 2 & -8 & 8\\
 5 & 0 & -5 & 10
 \end{bmatrix}
-
+```
 Add (-1 \* row 1) to row 3 (`replacement`)
-
+```math
 \begin{bmatrix}
 5 & -10 & 5 & 0\\
 0 & 2 & -8 & 8\\
 0 & 10 & -10 & 10
 \end{bmatrix}
-
+```
 Add (5 \* row 2) to row 1 (`replacement`)
 Add (-5 \* row 2) to row 3 (`replacement`)
-
+```math
 \begin{bmatrix}
 5 & 0 & -35 & 40\\
 0 & 2 & -8 & 8\\
 0 & 0 & 30 & -30
 \end{bmatrix}
-
+```
 `Scale` row 1 by 1/5
 `Scale` row 2 by 1/2
 `Scale` row 3 by 1/30
-
+```math
 \begin{bmatrix}
 1 & 0 & -7 & 8\\
 0 & 1 & -4 & 4\\
 0 & 0 & 1 & -1
 \end{bmatrix}
-
+```
 Add (7 \* row 3) to row 1 (`replacement`)
 Add (4 \* row 3) to row 2 (`replacement`)
-
+```math
 \begin{bmatrix}
 1 & 0 & 0 & 1\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & -1
 \end{bmatrix}
-
+```
 We have found the solution set *(1, 0, -1)*. Let&rsquo;s switch back from matrix form to
 see another perspective.
 
@@ -317,14 +322,14 @@ LHS and RHS agree, so this solution is valid
 
 One way to check for consistency is to put the augmented matrix in a triangular form.
 Something like this
-
+```math
 \begin{bmatrix}
 1 & * & * & * \\
 0 & 3 & * & * \\
 0 & 0 & 4 & * \\
 0 & 0 & 0 & 7
 \end{bmatrix}
-
+```
 **We will learn more about this form later**
 
 When we have this form we can easily check if it will be solvable or for stuff
@@ -356,14 +361,15 @@ The matrix is in `Reduced Echelon Form` if it also has these additional properti
 Echelon Form Examples
     x is any nonzero value
     &diamond; is any value including zero
-
+```math
 \begin{bmatrix}
 x & \diamond & \diamond & \diamond \\
 0 & x & \diamond & \diamond \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0
 \end{bmatrix}
-
+```
+```math
 \begin{bmatrix}
 x & \diamond & \diamond & \diamond & \diamond & \diamond \\
 0 & x & \diamond & \diamond & \diamond & \diamond \\
@@ -371,25 +377,26 @@ x & \diamond & \diamond & \diamond & \diamond & \diamond \\
 0 & 0 & 0 & 0 & x & \diamond \\
 0 & 0 & 0 & 0 & 0 & x \\
 \end{bmatrix}
-
+```
 Reduced Echelon Form
     x is any nonzero value
     &diamond; is any value including zero
-
+```math
 \begin{bmatrix}
 1 & 0 & \diamond & \diamond \\
 0 & 1 & \diamond & \diamond \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0
 \end{bmatrix}
-
+```
+```math
 \begin{bmatrix}
 1 & 0 & \diamond & 0 & 0 & \diamond \\
 0 & 1 & \diamond & 0 & 0 & \diamond \\
 0 & 0 & 0 & 1 & 0 & \diamond \\
 0 & 0 & 0 & 0 & 1 & \diamond \\
 \end{bmatrix}
-
+```
 
 <a id="org1cd1ae4"></a>
 
@@ -449,13 +456,13 @@ and uniqueness of a linear system.
 Example
 
 The following matrix is in echelon form
-
+```math
 \begin{bmatrix}
 3 & -9 & 12 & -9 & 6 & 15\\
 0 & 2 & -4 & 4 & 2 & -6\\
 0 & 0 & 0 & 0 & 1 & 4
 \end{bmatrix}
-
+```
 *Since we don&rsquo;t see untrue statements like /1 = 0*, we can say that a solution
 exists.
 
