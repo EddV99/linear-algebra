@@ -87,8 +87,8 @@ set.
 Example:
 
     \begin{bmatrix}
-    1 & -2 & 1\\
-    0 & 2 & -8\\
+    1 & -2 & 1\\\
+    0 & 2 & -8\\\
     5 & 0 & -5
     \end{bmatrix}
 
