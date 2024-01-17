@@ -202,13 +202,13 @@ set.
    ``` 
     Scale row 1 by 4
     The matrix becomes
-```math    
+   ```math    
     \begin{bmatrix}
     4 & -8 & 4\\
     0 & 2 & -8\\
     5 & 0 & -5
     \end{bmatrix}
-```
+   ```
 
 <a id="org27e6ed9"></a>
 
